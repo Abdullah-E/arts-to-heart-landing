@@ -1,0 +1,44 @@
+/* Primary Button Styles */
+.primary-button-wrapper {
+    display: inline-block;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 4rem;
+    background-color: var(--color-primary); 
+    color: #fff; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    /* border-radius: 0.5rem; */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-button:hover {
+    background-color: var(--color-secondary); /* Slightly darker shade for hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.primary-button-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.primary-button-icon {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button-icon svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff; 
+}
+
+.primary-button-text {
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+/* Primary Button Styles */
+.secondary-button-wrapper {
+    display: inline-block;
+}
+
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 4rem;
+    background-color: #fff; 
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    /* border-radius: 0.5rem; */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.secondary-button:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-2px); 
+    color: #fff;
+}
+
+.secondary-button-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.secondary-button-icon {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,101 @@
+/* Search Container */
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Input Group */
+.input-group {
+    flex: 1;
+    position: relative;
+}
+
+/* Search Input */
+.search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Search Button */
+.search-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    /* slightly lighter shade */
+    background-color: color-mix(in srgb, var(--color-primary) , white 20%);
+}
+
+/* Searchable Dropdown Styles */
+
+.searchable-dropdown {
+    width: 100%;
+}
+
+.searchable-dropdown h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Dropdown Handle */
+.dropdown-handle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between arrow and clear icon */
+}
+
+/* Arrow Icon */
+.arrow-icon {
+    font-size: 1rem;
+    color: #000;
+    transition: transform 0.5s ease;
+}
+
+.arrow-icon.down {
+    transform: rotate(0deg);
+}
+
+.arrow-icon.up {
+    transform: rotate(180deg);
+}
+
+/* Clear Icon (only shown when a value is selected) */
+.clear-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #000;
+    display: none; /* Hidden by default */
+}
+
+/* Show clear icon only when a value is selected */
+.react-dropdown-select-clear {
+    display: block !important; /* Override library's default behavior */
+}
